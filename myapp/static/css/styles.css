@@ -1,0 +1,66 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+	background-color: #45a049;
+}
+
+
+/* Form Styles */
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+form input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+form p {
+	margin-bottom: 15px;
+}
+
+form p:last-child {
+	margin-bottom: 0;
+}

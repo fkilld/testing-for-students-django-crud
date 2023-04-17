@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block content %}
+    {% for task in tasks %}
+      <p>
+        {{ task.title }} - {{ task.description }} - {{ task.completed }}
+        <p>{{ user.username }}</p>
+        <a href="{% url 'task_update' task.pk %}">Edit</a>
+        <a href="{% url 'task_delete' task.pk %}" onclick="return confirm('Are you sure you want to delete this task?');">Delete</a>
+      </p>
+    {% endfor %}
+    <a href="{% url 'task_create' %}">Create Task</a>
+    
+{% endblock %}
